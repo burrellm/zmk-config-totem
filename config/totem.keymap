@@ -121,10 +121,10 @@
 
         Gaming_2 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp GRAVE  &kp N1  &kp N2     &kp N3     &kp N4    &tog 2  &tog 2  &tog 2  &tog 2  &tog 2
+        &kp TAB    &kp Q   &kp W      &kp E      &kp R     &tog 2  &tog 2  &tog 2  &tog 2  &tog 2
+&trans  &kp LSHFT  &kp A   &kp S      &kp D      &kp F     &tog 2  &tog 2  &tog 2  &tog 2  &tog 2  &trans
+                           &kp LCTRL  &kp SPACE  &mo 6     &tog 2  &tog 2  &tog 2
             >;
         };
     };
