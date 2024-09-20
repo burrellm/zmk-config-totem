@@ -22,7 +22,6 @@
 
 &mt {
     quick-tap-ms = <100>;
-    global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
 };
@@ -64,7 +63,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        STRDY {
             label = "BASE";
             bindings = <
        &kp V       &kp M       &kp L         &kp C        &kp P        &kp X        &kp F            &kp O         &kp U       &kp J
@@ -74,21 +73,21 @@
             >;
         };
 
-        layer_1 {
+        QWERTY {
             bindings = <
-        &kp Q   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp Q           &kp W           &kp E        &kp R             &kp T     &kp Y   &kp U              &kp I        &kp O            &kp P
+        &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G     &kp H   &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMI
+&trans  &kp Z           &kp X           &kp C        &kp V             &kp B     &kp N   &kp M              &kp COMMA    &kp DOT          &kp FSLH            &trans
+                                        &trans       &trans            &trans    &trans  &trans             &trans
             >;
         };
 
         layer_2 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp GRAVE  &kp N1  &kp N2     &kp N3     &kp N4    &tog 2  &trans  &trans  &trans  &trans
+        &kp TAB    &kp Q   &kp W      &kp E      &kp R     &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp A   &kp S      &kp D      &kp F     &trans  &trans  &trans  &trans  &trans  &trans
+                           &kp LCTRL  &kp SPACE  &mo 6     &trans  &trans  &trans
             >;
         };
 
